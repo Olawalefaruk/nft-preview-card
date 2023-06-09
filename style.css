@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+}
+.background {
+  background-color: rgb(11, 21, 49);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue-box {
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(0, 30, 64);
+  max-width: 280px;
+  border-radius: 7px;
+
+}
+
+.image-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 230px;
+  border-radius: 22px;
+}
+.image {
+  max-width: 190px;
+  border-radius: inherit;
+  padding: 15px;
+}
+
+.image-box::after {
+  content: url("./icon-view.svg");
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 7px;
+}
+.image-box:hover::after {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+h1 {
+  color: white;
+  font-family: arial;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+}
+
+h1:hover {
+  cursor: pointer;
+  color:  aqua;
+}
+
+p {
+  color: gray;
+  padding-left: 20px;
+  width: 210px;
+  font-family: arial;
+  font-size: 11px;
+  line-height: 16px;
+  padding-bottom: 15px;
+}
+
+.h2 {
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.eth-icon {
+  height: 12px;
+  padding-right: 4px;
+  
+}
+.span-0 {
+  color: aqua;
+  font-family: arial;
+  font-size: 10px;
+  text-align: center;
+  padding-right: 70px;
+}
+
+.clock-icon {
+  height: 12px;
+  padding-right: 4px;
+  
+}
+.span-1 {
+  color: gray;
+  font-family: arial;
+  font-size: 10px;
+  text-align: center;
+}
+
+.profile-div {
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  height: 22px;
+  padding-right: 8px;
+}
+.span-2 {
+  color: gray;
+  font-family: arial;
+  font-size: 10px;
+  padding-right: 3px;
+}
+.span-3 {
+  color: white;
+  font-family: arial;
+  font-size: 10px;
+}
+
+.span-3:hover {
+  cursor: pointer;
+  color:  aqua;
+}
+
+.line {
+
+  height: 1px;
+  background-color: gray;
+  width: 190px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+h1, p, h2 {
+  margin: 0;
+}
+
+@media (max-width: 481) {
+  .blue-box {
+    width: 90%;
+    
+  }
+  .background {
+    background-color: rgb(11, 21, 49);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+}
